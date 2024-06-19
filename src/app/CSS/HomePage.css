@@ -511,11 +511,19 @@ form {
     #hero h1 {
         margin: 0rem 0 10px 0;
     }
+    .counts .image {
+        text-align: center;
+    }
+    .counts .image {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
     #hero {
         margin-top: 20px;
+        height: 100vh;
+        padding: 0 2rem;
     }
     #hero h1 {
         font-size: 28px;
@@ -526,40 +534,22 @@ form {
         line-height: 24px;
         margin-bottom: 30px;
     }
-    /* #hero .hero-img img {
-        width: 70%;
-    } */
+    .clients img {
+        width: 40%;
+    }
+
 }
 @media (max-width: 991px) {
-    #hero {
-        height: 100vh;
-    }
+ 
     #hero .hero-img {
         text-align: center;
     }
-    /* #hero .hero-img img {
-        width: 50%;
-    } */
     #hero .animated {
         -webkit-animation: none;
         animation: none;
     }
-}
-@media (max-width: 768px) {
-    .container-md, .container-sm {
-         max-width: 720px;
-     }
- }
 
- @media (max-width: 1024px) {
-    .counts .image {
-        text-align: center;
-    }
-    .counts .image {
-        text-align: center;
-    }
 }
-
 @media (max-width: 667px) {
     .counts .image img {
         max-width: 100%;
@@ -567,13 +557,8 @@ form {
 }
 
 @media (max-width: 575px) {
+    
     .clients img {
         width: 30%;
-    }
-}
-
-@media (max-width: 768px) {
-    .clients img {
-        width: 40%;
     }
 }
