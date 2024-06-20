@@ -3,7 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <footer id="footer">
-      <div className="container">
         <div className="flex justify-between">
           <div className="Copyright">
             © Copyright <strong>Akeshya</strong>. All Rights Reserved
@@ -21,8 +20,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
+        </div>  
     </footer>
   );
 };

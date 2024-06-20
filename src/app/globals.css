@@ -10,16 +10,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+a {
+  color: #14279b;
+  text-decoration: none;
+}
 
 section {
-  padding: 4rem 4rem;
+  padding: 3rem;
   overflow: hidden;
 }
 
 #header{
   z-index: 997;
   transition: all 0.5s;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
   background: #fff;
   width: 100vw;
 }
@@ -112,6 +116,11 @@ section {
   color: #fff;
 }
 
+.navbar .getstarted:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #14279b;
   text-decoration: none;
@@ -187,11 +196,35 @@ section {
   color: #222222;
   font-size: 14px;
 }
+.back-to-top .icon {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+.back-to-top {
+  position: fixed;
+  /* visibility: hidden; */
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #14279b;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  transition: all .1s;
+}
 
 @media (max-width: 425px) {
   section {
-    padding: 4rem 1rem;
-   
+    padding: 2rem;
 }
 }
 @media (max-width: 768px) {
@@ -208,4 +241,10 @@ section {
     padding: 2rem 1rem;
   }
 
+}
+
+@media (min-width: 1440px) {
+  section {
+    padding: 2rem 6rem;
+}
 }

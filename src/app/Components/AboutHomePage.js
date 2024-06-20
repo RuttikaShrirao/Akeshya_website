@@ -23,7 +23,6 @@ const AboutHomePage = () => {
     <div>
       {/* client section */}
       <section id="clients" className="clients clients">
-        <div className="container">
           <div className="row lg:columns-6 md:columns-3 sm: columns-2">
             {clients.clients.map((data, i) => (
               <div
@@ -43,12 +42,10 @@ const AboutHomePage = () => {
               </div>
             ))}
           </div>
-        </div>
       </section>
 
       {/* about us */}
       <section id="about" className="about">
-        <div className="container">
           <div
             className="section-title aos-init aos-animate"
             data-aos="fade-up"
@@ -101,12 +98,10 @@ const AboutHomePage = () => {
               <Button name="Learn More" />
             </div>
           </div>
-        </div>
       </section>
 
       {/* conter */}
       <section id="counts" className="counts">
-        <div className="container">
           <div className="row lg:columns-2 items-center">
             <div
               className="image aos-init aos-animate"
@@ -117,12 +112,12 @@ const AboutHomePage = () => {
             </div>
 
             <div
-              className="col-xl-7 d-flex align-items-stretch pt-12 pt-xl-0 aos-init aos-animate"
+              className="pt-12 pt-xl-0 aos-init aos-animate"
               data-aos="fade-left"
               data-aos-delay="500"
             >
               <div className="content d-flex flex-column justify-content-center">
-                <div className="row lg:columns-2  items-center">
+                <div className="row md:columns-2  items-center">
                   {counter.counter.map((data, i) => (
                     <div key={i} className=" d-md-flex align-items-md-stretch">
                       <div className="count-box">
@@ -131,9 +126,9 @@ const AboutHomePage = () => {
                           onEnter={() => setCounterStart(true)}
                           onExit={() => setCounterStart(false)}
                         >
-                          <span className="purecounter">
+                          <span >
                             {counterStart && (
-                              <CountUp
+                              <CountUp className="purecounter"
                                 start={0}
                                 end={data.end}
                                 duration={2}
@@ -151,12 +146,10 @@ const AboutHomePage = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* services */}
       <section id="services" className="services">
-        <div className="container">
           <div
             className="section-title aos-init aos-animate"
             data-aos="fade-up"
@@ -188,12 +181,10 @@ const AboutHomePage = () => {
               );
             })}
           </div>
-        </div>
       </section>
 
       {/* our services */}
       <section id="more-services" className="more-services">
-        <div className="container">
           <div
             className="section-title aos-init aos-animate"
             data-aos="fade-up"
@@ -223,12 +214,10 @@ const AboutHomePage = () => {
               </div>
             ))}
           </div>
-        </div>
       </section>
 
       {/* OUR CORE FEATURES */}
       <section id="features" className="features">
-        <div className="container">
           <div
             className="section-title aos-init aos-animate"
             data-aos="fade-up"
@@ -257,12 +246,10 @@ const AboutHomePage = () => {
               </div>
             ))}
           </div>
-        </div>
       </section>
 
       {/* CONTACT US */}
       <section id="contact" className="contact">
-        <div className="container">
           <div
             className="section-title aos-init aos-animate"
             data-aos="fade-up"
@@ -270,7 +257,7 @@ const AboutHomePage = () => {
             <h2>Contact Us</h2>
           </div>
 
-          <div className="row flex flex-wrap">
+          <div className="row flex justify-between flex-wrap">
             <div
               className=" aos-init aos-animate w-80"
               data-aos="fade-up"
@@ -370,7 +357,6 @@ const AboutHomePage = () => {
               </form>
             </div>
           </div>
-        </div>
       </section>
     </div>
   );

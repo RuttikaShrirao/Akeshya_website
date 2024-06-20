@@ -7,9 +7,21 @@ import Button from "./Button";
 const Banner = () => {
   return (
     <section id="hero">
-      <div className="container">
-        <div className="row  lg:columns-2  md:flex-wrap ">
-          <div className="order-2">
+        <div className="row ">
+        <div className="lg:flex justify-between ">
+         
+          <div
+            className="sm:order-2  hero-img aos-init aos-animate"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <Image 
+            width={500} 
+            height={500}
+             src={hero_img} className="animated" alt="image" />
+          </div>
+
+          <div className="sm:order-1">
             <h1 data-aos="fade-up" className="aos-init aos-animate">
               Grow your business with Akeshya
             </h1>
@@ -28,15 +40,9 @@ const Banner = () => {
             ></div>
             <Button name="Get Started" />
           </div>
-          <div
-            className="order-1  hero-img aos-init aos-animate"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
-            <Image src={hero_img} className="animated" alt="image" />
+
           </div>
         </div>
-      </div>
     </section>
   );
 };

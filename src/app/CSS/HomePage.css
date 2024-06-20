@@ -1,22 +1,16 @@
-
 #hero {
     width: 100%;
-    height: 70vh;
     margin-top: 70px;
-    padding: 0 4rem;
-    display: flex;
     align-items: center;
 }
 
 #hero h1 {
-    margin: 4.5rem 0 10px 0;
+    margin: 3.5rem 0 10px 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     color: #14279b;
 }
-
-
 
 #hero h2 {
     color: #484848;
@@ -36,17 +30,27 @@
     color: #14279b;
     border: 2px solid #14279b;
 }
-a {
-    color: #14279b;
-    text-decoration: none;
+
+.btn-get-started:hover{
+    transition: 0.5s;
+    background-color: #14279b;
+    color: white;
 }
 
 #hero .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    animation: up-down 5s ease-in-out infinite alternate-reverse both;
 }
 
-#hero .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+@keyframes up-down {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .section-title {
@@ -61,23 +65,7 @@ a {
     position: relative;
     color: #222222;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-}
-@media (min-width: 1200px) {
-    .h2, h2 {
-        font-size: 2rem;
-    }
-}
-.h2, h2 {
-    font-size: calc(1.325rem + .9vw);
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
+
 
 .section-title h2::before {
     margin: 0 15px 10px 0;
@@ -194,13 +182,13 @@ a {
     float: left;
     line-height: 0;
 }
-.counts .content .count-box span {
+.counts .content .count-box .purecounter {
     font-size: 36px;
     line-height: 30px;
-    display: block;
+    display: flex;
     font-weight: 700;
     color: #222222;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 .counts .content .count-box p {
     padding: 15px 0 0 0;
@@ -501,6 +489,12 @@ form {
     border-radius: 50px;
 }
 
+@media (min-width: 1200px) {
+    .h2, h2 {
+        font-size: 2rem;
+    }
+}
+
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -520,11 +514,6 @@ form {
 }
 
 @media (max-width: 768px) {
-    #hero {
-        margin-top: 20px;
-        height: 100vh;
-        padding: 0 2rem;
-    }
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
@@ -541,12 +530,13 @@ form {
 }
 @media (max-width: 991px) {
     #hero .hero-img {
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
-    #hero .animated {
+    /* #hero .animated {
         -webkit-animation: none;
         animation: none;
-    }
+    } */
 }
 @media (max-width: 667px) {
     .counts .image img {
